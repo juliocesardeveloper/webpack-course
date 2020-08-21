@@ -81,19 +81,20 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./css-style-loader/src/js/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./index.js":
-/*!******************!*\
-  !*** ./index.js ***!
-  \******************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./css-style-loader/src/js/index.js":
+/*!******************************************!*\
+  !*** ./css-style-loader/src/js/index.js ***!
+  \******************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log('Hola');\n\n//# sourceURL=webpack:///./index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module '../css/index.css'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\r\n\r\nconsole.log('Hola desde home');\n\n//# sourceURL=webpack:///./css-style-loader/src/js/index.js?");
 
 /***/ })
 
