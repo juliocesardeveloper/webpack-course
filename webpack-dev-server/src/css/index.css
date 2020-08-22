@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+body {
+  background: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 40px;
+  font-family: 'Alata', sans-serif;
+  animation: 1000ms latido infinite;
+}
+
+@keyframes latido {
+  0% {
+    transform: scale(1.1)
+  }
+  50% {
+    transform: scale(1)
+  }
+  100% {
+    transform: scale(1.1)
+  }
+}

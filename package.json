@@ -9,7 +9,9 @@
     "build:external": "webpack --config ./external/webpack.config.js",
     "build:multi": "webpack --config ./multi-entry-points/webpack.config.js",
     "build:css": "webpack --config ./css-style-loader/webpack.config.js",
-    "build:plugins": "webpack --config ./plugins/webpack.config.js"
+    "build:plugins": "webpack --config ./plugins/webpack.config.js",
+    "build:babel": "webpack-dev-server --config ./babel/webpack.config.js",
+    "build:react": "webpack-dev-server --config ./react/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -24,13 +26,23 @@
     "url": "https://github.com/juliocesardeveloper/webpack-course/issues"
   },
   "homepage": "https://github.com/juliocesardeveloper/webpack-course#readme",
-  "dependencies": {},
+  "dependencies": {
+    "@babel/runtime": "7.11.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
   "devDependencies": {
+    "@babel/core": "7.11.4",
+    "@babel/plugin-transform-runtime": "7.11.0",
+    "@babel/preset-env": "7.11.0",
+    "@babel/preset-react": "7.10.4",
+    "babel-loader": "8.1.0",
     "css-loader": "2.1.1",
     "html-webpack-plugin": "4.3.0",
     "mini-css-extract-plugin": "0.10.0",
     "style-loader": "1.2.1",
     "webpack": "4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "3.11.0"
   }
 }
