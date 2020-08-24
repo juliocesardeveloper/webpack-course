@@ -23,9 +23,7 @@ module.exports = {
         test: /\.js$/,
         use: 'babel-loader',
         exclude: /node_modules/,
-      }
-    ],
-    rules: [
+      },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
@@ -35,7 +33,8 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      title: 'webpack-dev-server'
+      title: 'webpack-dev-server',
+      template: path.resolve(__dirname, 'index.html')
     }),
   ]
 }
